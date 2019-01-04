@@ -9,7 +9,6 @@ class ProductsController < ApplicationController
     user_cart = cart
     user_cart << params[:product]
     session[:cart] = user_cart
-    @products = cart
     redirect_to root_path
   end
 end
