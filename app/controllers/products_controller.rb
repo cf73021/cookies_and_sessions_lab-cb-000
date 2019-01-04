@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  helper_method :cart
+  
   def index
     @product = Product.first
   end
